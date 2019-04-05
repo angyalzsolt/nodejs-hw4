@@ -1,4 +1,4 @@
-## Assignment3
+## Assignment4
 # NodeJs PizzaCompany API with GUI and a CLI
 
 Login to your account, set up your shopping cart, pay with a credit card and get verfication via email.
