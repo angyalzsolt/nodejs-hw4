@@ -1,0 +1,36 @@
+<div class="board">
+	<div class="left-side">
+		<div class="msg-box">
+			<p class="msg title">Sign Up</p>
+			<p class="msg sub">It only takes a few minutes, <br> after you can start with <br> the shopping.</p>	
+		</div>
+			
+	</div>
+	<div class="right-side">
+		<div class="msg-box form">
+			<div class="formWrapper">
+				<form id="accountCreate" action="/api/users" method="POST">
+				    <div class="formError"></div>
+				    <div class="inputWrapper">
+				      <input type="text" name="firstName" autocomplete="off" placeholder="First name" />
+					</div>
+					<div class="inputWrapper">
+						<input type="text" name="lastName" autocomplete="off" placeholder="Last name" />
+					</div>
+					<div class="inputWrapper">
+						<input type="text" name="email" autocomplete="off" placeholder="E-mail address" />
+					</div>
+					<div class="inputWrapper">
+						<input type="text" name="address" autocomplete="off" placeholder="Address (street, house number)" />
+					</div>
+					<div class="inputWrapper">
+						<input type="password" name="password" autocomplete="off" placeholder="Password" />
+					</div>
+					<div class="login-btn">
+						<button class="btn" id="btn-login" type="submit">Get Started</button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>

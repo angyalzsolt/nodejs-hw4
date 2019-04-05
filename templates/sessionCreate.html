@@ -1,0 +1,27 @@
+<div class="board">
+	<div class="left-side">
+		<div class="msg-box">
+			<p class="msg title">Login</p>
+			<p class="msg sub">Don't have an account?<br>Register, and you can start <br> your jurney.</p>	
+		</div>
+			
+	</div>
+	<div class="right-side">
+		<div class="msg-box form">
+			<div class="formWrapper">
+				<form id="accountCreate" action="/api/tokens" method="POST">
+				    <div class="formError"></div>
+					<div class="inputWrapper">
+						<input type="text" name="email" autocomplete="off" placeholder="E-mail address" />
+					</div>
+					<div class="inputWrapper">
+						<input type="password" name="password" autocomplete="off" placeholder="Password" />
+					</div>
+					<div class="login-btn">
+						<button class="btn" id="btn-login" type="submit">Get Started</button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>

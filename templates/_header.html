@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- General Settings -->
+	<meta charset="utf-8">
+	<meta http-equiv="content-language" content="en-us">
+	<base href="{global.baseUrl}">
+
+	<!-- Meta Tags -->
+	<title>{head.title} | {global.appName}</title>
+	<meta name="description" content="{head.description}">
+
+	<!-- Static Assets -->
+	<link type="image/x-icon" rel="icon" href="favicon.ico">
+	<link rel="stylesheet" type="text/css" href="public/app.css">
+
+	<!-- Dependencies -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Oxygen" rel="stylesheet">
+</head>
+<body class="{body.class}">
+<div class="navbar">
+	<!-- Left side -->
+	<div class="menu-left">
+		<a href="/session/create"><span class="loggedOut" id="login_btn">Login</span></a>
+		<span class="loggedOut"> | </span>
+		<a href="/account/create"><span class="loggedOut" id="signup_btn">Signup</span></a>
+		<a href="#"><span class="loggedIn" id="logout_btn">Logout</span></a>
+	</div>
+	<!-- Middle -->
+	<div class="menu-middle">
+		<a href="/" title=""><span class="brand-title">PIZZA&BURGER</span></a>
+	</div>
+	 <!-- Right side -->
+	<div class="menu-right">
+		 <!-- User icon -->
+		<a href="/account/edit" title=""><span id="usericon" class="icon" style="font-size: 25px; color: black;">
+	  		<i class="fas fa-user"></i>	
+		</span></a>
+		<!-- shoppingcart icon -->
+		<a href="/account/listShoppingcart" title=""><span id="shoppingcart" class="icon" style="font-size: 25px; color: black;">
+	  		<i class="fas fa-shopping-cart"></i>
+		</span></a>
+	</div>
+</div>
+
+

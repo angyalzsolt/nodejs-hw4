@@ -1,0 +1,317 @@
+/*
+ * CSS Styles for Application
+ *
+ */
+body {
+	font-family: 'Oxygen', sans-serif;
+	color: black;
+	margin: 0;
+	padding: 0;
+}
+
+body.loggedOut span.loggedOut div.loggedOut {
+	display: inline-block;
+}
+
+body.loggedOut span.loggedIn, body.loggedOut div.loggedIn {
+	display: none;
+}
+body.loggedIn span.loggedIn div.loggedIn {
+	display: inline-block;
+}
+
+body.loggedIn span.loggedOut, body.loggedIn div.loggedOut {
+	display: none;
+}
+
+p, h1, h2, h3, span, a, ul, li {
+	text-decoration: none;
+	color: black;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+.container-first {
+	margin: 0;
+	padding: 0;
+	height: 100vh;
+	/* background: url('./img9.jpg') top fixed; */
+	background-size: 100%;
+	background-repeat: no-repeat;
+	position: relative;
+	top: 0;
+	left: 0;
+}
+.navbar {
+	background: white;
+	padding: 0px;
+	width: 100%;
+	height: 60px;
+	position: fixed;
+	margin: 0 auto;
+	top: 0;
+	left: 0;
+	right: 0;
+	display: flex;
+	z-index: 999;
+}
+.menu-left {
+	text-align: left;
+	width: 25%;
+	margin-left: 20px;
+}
+.menu-left span{
+	display: inline-block;
+	margin: 0;
+	margin-top: 20px;
+	font-size: 25px;
+	cursor: pointer;
+	transition: color .2s ease-in;
+}
+.menu-left span:hover {
+	color: blue;
+}
+.menu-middle{
+	text-align: center;
+	width: 50%;
+}
+/* the title (everywhere) */
+.brand-title {
+	font-size: 40px;
+	font-weight: bold;
+} 
+.menu-right {
+	text-align: left;
+	width: 25%;
+	margin-right: 20px;
+}
+
+
+#shoppingcart, #usericon {
+	float: right;
+	margin-top: 20px;
+	margin-left: 20px;
+	cursor: pointer;
+}
+.content {
+	/* position: fixed; */
+	display: flex;
+	align-items: center; /* align vertical */
+	height: 100vh;
+	min-height: 400px;
+	width: 100%;
+}
+#welcome-msg {
+	font-size: 80px;
+}
+#welcome-msg-sub  {
+	margin: 10px 0 0 80px;
+	font-size: 30px;
+}
+#view-btn {
+	font-size: 25px;
+	border: 2px solid black;
+	padding: 7px;
+	/* float: right; */
+	position: relative;
+	bottom: 0;
+	margin-left: 310px;
+	margin-top: 300px;
+	cursor: pointer;
+	transition: color .2s ease-in, border .2s ease-in;
+}
+#view-btn:hover {
+	border: 2px solid blue;
+	color: blue;
+}
+.container-second {
+	margin: 0;
+	padding: 0;
+	height: 100vh;
+/* 	background: url('./img11.jpg') fixed;
+	background-size: 100%;
+	background-repeat: no-repeat; */
+/* 	top: 0;
+	left: 0; */
+}
+.footer{
+	width: 100%;
+	/*   background-color: #e0eaf9; */
+	padding: 20px 0;
+	text-align: center;
+	border-width: 1px 0 0 0;
+	border-color: #fff;
+	border-style: solid;
+	font-weight: bold;
+	font-size: 24px;
+}
+/* .copyright {
+	align-self: flex-end;
+} */
+
+
+.board {
+	/* margin-top: 100px; */
+	width: 100%;
+	height: 100%;
+	display: flex;
+}
+.left-side {
+	width: 40%;
+	height: 100vh;
+	display: flex;
+	align-items: center;
+}
+
+.right-side {
+	width: 60%;
+	height: 100vh;	
+	display: flex;
+	align-items: center;
+
+}
+.form {
+	border: 2px solid black;
+    box-shadow: 5px 5px 5px 5px grey;
+    padding: 20px;
+}
+.msg-box {
+	margin: auto;
+}
+.title {
+	font-weight: bold;
+	font-size: 80px;
+}
+.sub {
+	font-size: 40px;
+}
+.msg-box input {
+	text-align: center;
+	margin: 20px;
+	color: black;
+	border: none;
+	border-bottom: 2px solid grey;
+	width: 350px;
+	height: 30px;
+	font-size: 25px;
+}
+.msg-box input:focus {
+	background: white;
+}
+.login-btn {
+	text-align: center;
+}
+.btn {
+	background: none;
+	border: 2px solid black;
+	font-size: 25px;
+	cursor: pointer;
+}
+
+.del {
+	background: black;
+	color: white;
+}
+ #item_target {
+ 	display: flex;
+ 	width: 80%;
+ 	height: 300px;
+ 	margin: auto;
+ 	margin-top: 100px;
+ 	/* overflow: scroll; */
+ }
+
+ #item_target::-webkit-scrollbar { 
+    display: none; 
+}
+
+ .item-card {
+ 	border: 1px solid black;
+ 	margin: 5px;
+ 	text-align: center;
+ 	width: 200px;
+ 	position: relative;
+ 	/* min-width: 250px!important; */
+ 	transition: width 0.4s ease-in, border 0.2s ease-in;
+ }
+
+ .item-card:hover {
+ 	width: 300px!important;
+ 	border: 2px solid black;
+ 	cursor: pointer;
+ }
+
+ .item-price {
+ 	font-size: 25px;
+ 	font-weight: 100;
+ }
+
+ .menu-con {
+ 	width: 100%;
+ 	height: 100%;
+ 	margin-top: 100px;
+ 	text-align: center;
+ }
+
+ .item-desc {
+ 	font-size: 20px;
+ }
+
+ .item-desc li {
+ 	line-height: 1.5;
+ 	text-decoration: underline;
+ }
+
+ .item-btn {
+ 	position: absolute;
+ 	bottom: 5px;
+ 	left: 35%;
+ 	margin: auto;
+ }
+ .sc-con {
+ 
+ 	text-align: center;
+ 	width: 80%;
+ 	margin: auto;
+ 	margin-top: 100px;
+ }
+ #sc_target {
+ 	text-align: left;
+ 	width: 100%;
+ 	float: left;
+ }
+ .ac-edit {
+ 	margin-top: 100px;
+ 	width: 100%;
+ }
+ .ac-con {
+ 	width: 40%;
+ 	margin: auto;
+ 	align-items: center;
+ 	text-align:  center;
+ }
+ .formSuccess {
+ 	display: none;
+ }
+
+#paymentForm {
+	display: inline-block;
+}
+
+#paymentForm input {
+	text-align: center;
+	margin: 20px;
+	color: black;
+	border: none;
+	border-bottom: 2px solid grey;
+	width: 350px;
+	height: 30px;
+	font-size: 25px;
+}
+.sm-in {
+	width: 65px!important;
+}
+.in-con {
+	display: flex;
+}
+
